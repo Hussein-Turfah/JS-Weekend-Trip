@@ -1,1 +1,1 @@
-# JS-Weekend-Trip-
+# JS-Weekend-Trip
