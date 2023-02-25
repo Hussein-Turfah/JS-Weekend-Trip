@@ -1,13 +1,11 @@
 function validation(){
 const name = document.forms['registrationform']['name'].value;
-const email = document.getElementsByClassName('email');
-const password = document.getElementsByClassName('password');
-const confirm_password = document.getElementsByClassName('confirmpassword');
+const email = document.forms['registrationform']['email'].value;
+const password = document.forms['registrationform']['password'].value;
+const confirm_password = document.forms['registrationform']['confirmpassword'].value;
 const register = document.getElementById('register');
 
-  console.log(name)
-    if (name == "" ||email==''||password==''||confirm_password==''){
-      alert('Please Fill in The Fields')
-      console.log('false')
-    }}//)//register end
-//}
+if (name == ''||email==''||password==''||confirm_password==''){
+  alert('Please Enter All Required Fields')
+  console.log('false')
+}}
