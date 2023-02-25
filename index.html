@@ -9,20 +9,20 @@
 </head>
 <body class="container">
   <h1>Welcome!</h1>
-  <form name="registrationf" onsubmit="return validation()" class="validation">
+  <form name="registrationform" onsubmit="return validation()" class="validation">
     <div> 
-      <input class="field name" type="text" required title="First name" placeholder="First Name">
+      <input name="name" class="field name" type="text" title="First name" placeholder="First Name">
       <input class="field name" type="text" title="Middle name" placeholder="Middle Name">
-      <input class="field name" type="text" required title="Last name" placeholder="Last Name">
+      <input class="field name" type="text" title="Last name" placeholder="Last Name">
     </div>
     <div>
-      <input class="field email" type="email" required title="Email" placeholder="Email">
+      <input class="field email" type="email" title="Email" placeholder="Email">
     </div>
     <div>
-      <input class="field password" type="password" required title="Password" placeholder="Password">
+      <input class="field password" type="password" title="Password" placeholder="Password">
     </div>
     <div>
-      <input class="field confirmpassword" type="password" required title="Confirm password" placeholder="Confirm Password">
+      <input class="field confirmpassword" type="password" title="Confirm password" placeholder="Confirm Password">
     </div>
     <button class="register" id="register">Register</button>
   </form>
