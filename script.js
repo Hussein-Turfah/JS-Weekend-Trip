@@ -2,21 +2,23 @@ function merge(left,right){
   let sorted_array = []
   while (left.length && right.length){
     if (left[0]< right[0]){
-      sorted_array.push(left.shift())
+      sorted_array.push(left.shift());
     }
     else{
-      sorted_array.push(right.shift())
+      sorted_array.push(right.shift());
   }
+return [...sorted_array, ...left, ...right];
 }}
+
 function mergeSort(array){
   if (array.length <= 1) return array;
 
   let mid_number = Math.floor(array.length/2)
   let left = mergeSort(array.slice(0,mid_number))
   let right = mergeSort(array.slice(mid_number))
-  console.log(merge(left,right))
+  return merge(left,right)
 }
-
+console.log(mergeSort([4, 5, 4, 3, 9, 8]))
 
 /*function validation(){
 const fname = document.getElementById('fname').value;
@@ -49,6 +51,9 @@ else{
 
   if (numbers.length=10){ 
     console.log('true')
+    x = mergeSort(numbers)
+    console.log(x)
+
   }
   else{
   return false
