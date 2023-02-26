@@ -63,8 +63,15 @@ else{
     email: email,
     password: password,
   }
- event.preventDefault();
- numbers = prompt('ENTER NUMBERS PLEASE!')
-document.getElementById('merge').innerHTML = mergeSort(numbers)
-}
-}
+  event.preventDefault();
+  const numbers = prompt('ENTER NUMBERS PLEASE!')
+  document.getElementById('merge').innerHTML = mergeSort(numbers)
+  const string = prompt('Enter any word, letters only please!')
+  const leng = string.length
+  for(let i = 0; i < leng / 2 ; i++){
+    if (string[i] !== string[leng-i-1]){
+      alert(string + ' is not a palindrome.')
+    }
+    else{alert(string + ' is a palinfrome!')}
+  }
+}}
