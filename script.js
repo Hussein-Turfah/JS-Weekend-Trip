@@ -56,6 +56,7 @@ else if (!password_value.test(password)||password.length<8){
   return false
 }
 else{
+  document.getElementById('validation2').style.display = "contents";
   const information = {
     first_name: f_name,
     middle_name: m_name,
