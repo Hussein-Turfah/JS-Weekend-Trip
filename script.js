@@ -41,7 +41,15 @@ function collectString(){
         return
       }
     else{alert(string + ' is a palindrome!'); return}
-}}
+}
+}
+function checkPrime(){
+  const year = document.getElementById('birth').value
+  const this_year = new Date().getFullYear()
+  const age = this_year - year
+  console.log(age,year,this_year)
+  
+}
 
 function validation(event){
 const f_name = document.getElementById('fname').value;
@@ -83,6 +91,7 @@ else{
   collectNumbers()
   collectString()
   console.log('yes I am here')
+
   }
 }
 
