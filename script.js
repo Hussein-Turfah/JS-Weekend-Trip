@@ -28,6 +28,20 @@ function mergeSort(unsorted_array){
 
   return merge(left_sort, right_sort)
 }
+function collectNumbers(){
+  const numbers = prompt('ENTER NUMBERS PLEASE!')
+  document.getElementById('merge').innerHTML = mergeSort(numbers)
+}
+function collectString(){
+  const string = prompt('Enter any word, letters only please!')
+  const leng = string.length
+    for(let i = 0; i < leng / 2 ; i++){
+      if (string[i] !== string[leng-i-1]){
+        alert(string + ' is not a palindrome.')
+        return
+      }
+    else{alert(string + ' is a palindrome!'); return}
+}}
 
 function validation(event){
 const f_name = document.getElementById('fname').value;
@@ -56,7 +70,7 @@ else if (!password_value.test(password)||password.length<8){
   return false
 }
 else{
-  document.getElementById('validation2').style.display = "contents";
+  document.getElementById('hidden').style.display = "contents";
   const information = {
     first_name: f_name,
     middle_name: m_name,
@@ -65,14 +79,9 @@ else{
     password: password,
   }
   event.preventDefault();
-  const numbers = prompt('ENTER NUMBERS PLEASE!')
-  document.getElementById('merge').innerHTML = mergeSort(numbers)
-  const string = prompt('Enter any word, letters only please!')
-  const leng = string.length
-  for(let i = 0; i < leng / 2 ; i++){
-    if (string[i] !== string[leng-i-1]){
-      alert(string + ' is not a palindrome.')
-    }
-    else{alert(string + ' is a palinfrome!')}
+  //using a function to collect numbers from user input
+  collectNumbers()
+  collectString()
+  console.log('yes I am here')
   }
-}}
+}
