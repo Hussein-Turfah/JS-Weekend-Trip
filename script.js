@@ -50,6 +50,10 @@ function checkPrime(){
     const age = this_year - year
     console.log(age,year,this_year)
     //document.getElementById('birth').replaceWith()
+    if(age == 2){
+      console.log('WOWW, Your Age is Prime!')
+      return;
+    }
     for(let i = 2; i < age; i++){
       if (age % i == 0) {
         console.log('Your Age is not prime.')
