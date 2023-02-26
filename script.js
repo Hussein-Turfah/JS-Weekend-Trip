@@ -30,8 +30,9 @@ function mergeSort(unsorted_array){
 }
 
 function validation(event){
-const fname = document.getElementById('fname').value;
-const lname = document.getElementById('lname').value;
+const f_name = document.getElementById('fname').value;
+const m_name = document.getElementById
+const l_name = document.getElementById('lname').value;
 const email = document.getElementById('email').value;
 const password = document.getElementById('password').value;
 const confirm_password = document.getElementById('confirmpassword').value;
@@ -40,7 +41,7 @@ const password_value= /^(?=.*[A-Z])(?=.*[-+_!@#$% ^&*,.?])/;
   /*method for password verification, it means their should be one or more upper 
   ase characters and one or more special characters*/
 
-if (fname == ''|| lname == ''||email==''||password==''||confirm_password==''){
+if (f_name == ''|| l_name == ''||email==''||password==''||confirm_password==''){
   alert('Please fill the remaining fields.');
   return false;
 }
@@ -55,6 +56,13 @@ else if (!password_value.test(password)||password.length<8){
   return false
 }
 else{
+  const information = {
+    first_name: f_name,
+    middle_name: m_name,
+    last_name: l_name,
+    email: email,
+    password: password,
+  }
  event.preventDefault();
  numbers = prompt('ENTER NUMBERS PLEASE!')
 document.getElementById('merge').innerHTML = mergeSort(numbers)
