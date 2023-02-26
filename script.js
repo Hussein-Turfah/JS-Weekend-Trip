@@ -11,16 +11,25 @@ case characters and one or more special characters*/
 
 if (fname == ''|| lname == ''||email==''||password==''||confirm_password==''){
   alert('Please fill the remaining fields.')
+  return false
 }
 //DO NOT FORGET EMAIL VERIFICATION!!
 
 else if(password !== confirm_password){
   alert('Your passwords should be the same.')
+  return false
 }
 else if (!password_value.test(password)||password.length<8){
   alert('Your password should be at least 8 characters long with at least one special character and one upper case letter.')
+  return false
 }
 else{
   console.log('heyy')
-}
-}
+  const numbers = prompt('10 numbers please!')
+
+  if (numbers.length=10){ 
+  console.log('true')
+  }
+  else{
+  console.log("false")
+}}}
