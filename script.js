@@ -1,3 +1,41 @@
+function merge(left,right){
+  let sorted_array = []
+  while (left.length && right.length){
+    if (left[0]< right[0]){
+      sorted_array.push(left.shift())
+      console.log(sorted_array)
+    }
+  }
+}
+
+
+
+
+
+
+function mergeSort(array){
+  if (array.length <= 1){
+    return array}
+  else{
+    let mid_num = Math.floor(array.length/2)
+    let left = mergeSort(array.slice(0,mid_num))
+    let right = mergeSort(array.slice(mid_num))
+    return merge
+  }
+
+}
+const numbers = prompt('10 numbers please!')
+
+  if (numbers.length>=10){ 
+   mergeSort(numbers)
+   console.log('merged')
+  }
+  else{
+    console.log('false')
+  }
+
+
+
 function validation(){
 const fname = document.getElementById('fname').value
 const lname = document.getElementById('lname').value;
@@ -6,8 +44,8 @@ const password = document.getElementById('password').value;
 const confirm_password = document.getElementById('confirmpassword').value;
 const register = document.getElementById('register');
 const password_value= /^(?=.*[A-Z])(?=.*[-+_!@#$% ^&*,.?])/
-/*method for password verification, it means their should be one or more upper 
-case characters and one or more special characters*/
+  /*method for password verification, it means their should be one or more upper 
+  ase characters and one or more special characters*/
 
 if (fname == ''|| lname == ''||email==''||password==''||confirm_password==''){
   alert('Please fill the remaining fields.')
@@ -28,8 +66,8 @@ else{
   const numbers = prompt('10 numbers please!')
 
   if (numbers.length=10){ 
-  console.log('true')
+   mergeSort(numbers)
   }
   else{
-  console.log("false")
+  return false
 }}}
