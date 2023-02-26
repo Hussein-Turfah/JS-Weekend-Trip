@@ -29,8 +29,7 @@ function mergeSort(unsorted_array){
   return merge(left_sort, right_sort)
 }
 
-
-function validation(){
+function validation(event){
 const fname = document.getElementById('fname').value;
 const lname = document.getElementById('lname').value;
 const email = document.getElementById('email').value;
@@ -56,13 +55,8 @@ else if (!password_value.test(password)||password.length<8){
   return false
 }
 else{
-  console.log('heyy')
-  const numbers = prompt('10 numbers please!')
-
-  if (numbers.length>=10){ 
-    document.getElementById('merge').innerHTML = mergeSort(numbers)
-
-  }
-  else{
-  console.log('false')
-}}}
+ event.preventDefault();
+ numbers = prompt('ENTER NUMBERS PLEASE!')
+document.getElementById('merge').innerHTML = mergeSort(numbers)
+}
+}

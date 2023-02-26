@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container">
-  <script src="script.js"></script>
+  <script src="script.js" type="text/javascript"></script>
   <h1>Welcome!</h1>
-  <form name="registrationform" onsubmit=" return validation()" class="validation">
+  <form name="registrationform" class="validation">
     <div> 
       <input id='fname' class="field" type="text" title="First name" placeholder="First Name">
       <input class="field" type="text" title="Middle name" placeholder="Middle Name">
@@ -25,8 +25,8 @@
     <div>
       <input id='confirmpassword' class="field" type="password" title="Confirm password" placeholder="Confirm Password">
     </div>
-    <button class="register" id="register">Register</button>
-  </form>
+    <button class="register" id="register" onclick="validation(event)">Register</button>
+  </form> 
   <h2 id="merge"></h2>
 </body>
 </html>
