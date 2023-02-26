@@ -3,38 +3,13 @@ function merge(left,right){
   while (left.length && right.length){
     if (left[0]< right[0]){
       sorted_array.push(left.shift())
-      console.log(sorted_array)
     }
+    else{
+      sorted_array.push(right.shift())
   }
-}
-
-
-
-
-
-
-function mergeSort(array){
-  if (array.length <= 1){
-    return array}
-  else{
-    let mid_num = Math.floor(array.length/2)
-    let left = mergeSort(array.slice(0,mid_num))
-    let right = mergeSort(array.slice(mid_num))
-    return merge
-  }
-
-}
-const numbers = prompt('10 numbers please!')
-
-  if (numbers.length>=10){ 
-   mergeSort(numbers)
-   console.log('merged')
-  }
-  else{
-    console.log('false')
-  }
-
-
+}}
+merge([5,4,8,9,5,4],[5,6,1,5,6,5,4])
+console.log( [...sorted_array,...left,...right])
 
 function validation(){
 const fname = document.getElementById('fname').value
