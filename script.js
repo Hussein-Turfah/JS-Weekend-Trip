@@ -1,14 +1,19 @@
 function merge(left, right){
   const merged_array = []
 
-  while (left.length && right.length) {
-    if (left[0]< right[0]){
-      sorted_array.push(left.shift())
+  let leftpart = 0
+  let rightpart = 0
+  while (leftpart<left.length && rightpart<right.length) {
+    if (left[leftpart]< right[rightpart]){
+      merged_array.push(left[leftpart])
+      leftpart++
     }
     else{
-      sorted_array.push(right.shift())
+      merged_array.push(right[rightpart])
+      rightpart++
   }}
-return [...sorted_array, ...left, ...right]
+ const sorted_array = [...merged_array, ...left.slice(leftpart), ...right.slice(rightpart)]
+ return sorted_array
 }
 function mergeSort(unsorted_array){
   if (unsorted_array.length < 2) {
@@ -55,7 +60,8 @@ else{
   const numbers = prompt('10 numbers please!')
 
   if (numbers.length>=10){ 
-    console.log(mergeSort(numbers))
+    document.getElementById('merge').innerHTML = mergeSort(numbers)
+
   }
   else{
   console.log('false')
