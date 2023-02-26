@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container">
+  <script src="script.js"></script>
   <h1>Welcome!</h1>
-  <form name="registrationform" onsubmit="return validation()" class="validation">
+  <form name="registrationform" onsubmit=" return validation()" class="validation">
     <div> 
-      <input name='name' class="field" type="text" title="First name" placeholder="First Name">
-      <input name='name' class="field" type="text" title="Middle name" placeholder="Middle Name">
-      <input name='name' class="field" type="text" title="Last name" placeholder="Last Name">
+      <input name='fname' class="field" type="text" title="First name" placeholder="First Name">
+      <input class="field" type="text" title="Middle name" placeholder="Middle Name">
+      <input name='lname' class="field" type="text" title="Last name" placeholder="Last Name">
     </div>
     <div>
       <input name='email' class="field" type="email" title="Email" placeholder="Email">
@@ -27,5 +28,4 @@
     <button class="register" id="register">Register</button>
   </form>
 </body>
-<script src="script.js"></script>
 </html>
