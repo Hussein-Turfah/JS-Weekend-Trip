@@ -46,9 +46,20 @@ function collectString(){
 function checkPrime(){
   const year = document.getElementById('birth').value
   const this_year = new Date().getFullYear()
-  const age = this_year - year
-  console.log(age,year,this_year)
-  
+  if (year<=this_year){
+    const age = this_year - year
+    console.log(age,year,this_year)
+    //document.getElementById('birth').replaceWith()
+    for(let i = 2; i < age; i++){
+      if (age % i == 0) {
+        console.log('Your Age is not prime.')
+        return;
+    }
+      else{
+        console.log('WOWW, Your Age is Prime!')
+        return;
+      }
+  }}
 }
 
 function validation(event){
