@@ -129,4 +129,13 @@ class course{
   instructors = this.instructors;
 }
 }
-stringNumbers()
+function stringNumbers(){
+let string_charactes = document.getElementById('stringnumbers_button').value;
+let string_number = string_charactes.split('');
+console.log(string_number)
+for (let i = 0; i < string_number.length; i++){
+  if(!isNaN(string_number[i])){
+    
+  }
+}
+}
