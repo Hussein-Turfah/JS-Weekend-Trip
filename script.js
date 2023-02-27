@@ -110,3 +110,13 @@ else{
   }
 }
 
+class course{
+  constructor(name,crn,credit,time,instructors)
+  name = this.name
+  crn = this.crn
+  credits = this.credits
+  time = this.time
+  instructors = this.instructors
+}
+document.getElementById('coursebutton')
+
