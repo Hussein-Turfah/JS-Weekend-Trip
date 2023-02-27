@@ -120,3 +120,11 @@ class course{
 }
 document.getElementById('coursebutton')
 
+function newCourse(event){
+  event.preventDefault()
+  const name = document.getElementById('name').value
+  const crn = document.getElementById('crn').value
+  const credits = document.getElementById('credits').value
+  const time = document.getElementById('time').value  
+  const instructor = document.getElementById('instructor').value
+}
