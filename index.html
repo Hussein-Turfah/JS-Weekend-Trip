@@ -9,7 +9,7 @@
 </head>
 <body class="container">
   <script src="script.js" type="text/javascript"></script>
-  <h1>Welcome!</h1>
+  <h1><u>Welcome!</u></h1>
   <form name="registrationform" class="validation">
     <div> 
       <input id='fname' class="field" type="text" title="First name" placeholder="First Name">
@@ -37,15 +37,22 @@
     </div>
     <div>
       <h2 id="prime_title">
-        Your Input is Prime!
       </h2>
     </div>
-    <form id="course" name="courseform" class="courseform" >
-      <input id='name'  type="text" class="coursefield" title="Course" placeholder="Course">
-      <input id='crn' type="number" class="coursefield" title="Course Registeration Number" placeholder="Course Registeration Number">
-      <input id='credits' type="number" class="coursefield" title="Credits" placeholder="Credits">
-      <input id= 'time'  type="time" class="coursefield" title="Time" placeholder="Time">
-      <input id='instructor' type="text" class="coursefield" title="Instructors" placeholder="Instructors">
+    <div class="parallax"></div>
+    </div>
+    <form id="course" name="courseform" class="courseform">
+      <div>
+        <input id='name'  type="text" class="coursefield" title="Course" placeholder="Course">
+        <input id='crn' type="number" class="coursefield" title="Course Registeration Number" placeholder="CRN">
+        <input id='credits' type="number" class="coursefield" title="Credits" placeholder="Credits">
+      </div>
+      <div>
+        <input id= 'time'  type="time" class="coursefield" title="Time" placeholder="Time">
+      </div>
+      <div>
+        <input id='instructor' type="text" class="coursefield" title="Instructors" placeholder="Instructors">
+      </div>
       <button class="coursebutton" id="coursebutton" onclick="newCourse(event)" >Submit</button>
     </form>
     <div>
@@ -55,7 +62,6 @@
       <button id ='stringnumbers_button' onclick="stringNumbers()">Switch Numbers</button>
     </div>
     <h2 id="finalstring">
-      
     </h2>
   </div>
 </body>
