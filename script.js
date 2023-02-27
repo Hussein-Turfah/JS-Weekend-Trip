@@ -130,12 +130,14 @@ class course{
 }
 }
 function stringNumbers(){
-let string_charactes = document.getElementById('stringnumbers_button').value;
-let string_number = string_charactes.split('');
-console.log(string_number)
+let string_charactes = document.getElementById('stringnumbers').value;
+let string_number = string_charactes.split(',');
 for (let i = 0; i < string_number.length; i++){
   if(!isNaN(string_number[i])){
-    
+    string_number[i] = string_number[i].toString().split('').reverse('').join('')
+    console.log(string_number)
   }
+  let final_string = string_number.join('')
+  console.log(final_string)
 }
 }
