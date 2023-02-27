@@ -28,41 +28,42 @@
     <button class="register" id="register" onclick="validation(event)">Register</button>
   </form> 
   <h2 id="merge"></h2>
-  <div id = 'hidden' class = 'validation'>
-    <div>
-      <input class="field" id="birth" type="number" placeholder="Year of Birth" minlength="4" maxlength="4">
-    </div>
-    <div>
-      <button id ='prime_button' onclick="checkPrime()">Check Prime</button>
-    </div>
-    <div>
-      <h2 id="prime_title">
+  <div id = 'hidden' class = 'hidden'>
+    <div class="hidden2">
+      <div class="parallax"></div>
+      <div>
+        <input class="field" id="birth" type="number" placeholder="Year of Birth" minlength="4" maxlength="4">
+      </div>
+      <div>
+        <button id ='prime_button' onclick="checkPrime()">Check Prime</button>
+      </div>
+      <div>
+        <h2 id="prime_title">
+        </h2>
+      </div>
+      <form id="course" name="courseform" class="courseform">
+        <div>
+          <input id='name'  type="text" class="coursefield" title="Course" placeholder="Course">
+          <input id='crn' type="number" class="coursefield" title="Course Registeration Number" placeholder="CRN">
+          <input id='credits' type="number" class="coursefield" title="Credits" placeholder="Credits">
+        </div>
+        <div>
+          <input id= 'time'  type="time" class="coursefield" title="Time" placeholder="Time">
+        </div>
+        <div>
+          <input id='instructor' type="text" class="coursefield" title="Instructors" placeholder="Instructors">
+        </div>
+        <button class="coursebutton" id="coursebutton" onclick="newCourse(event)" >Submit</button>
+      </form>
+      <div>
+        <input class="field" id="stringnumbers" placeholder="Your Text">
+      </div>
+      <div>
+        <button id ='stringnumbers_button' onclick="stringNumbers()">Switch Numbers</button>
+      </div>
+      <h2 id="finalstring">
       </h2>
     </div>
-    <div class="parallax"></div>
-    </div>
-    <form id="course" name="courseform" class="courseform">
-      <div>
-        <input id='name'  type="text" class="coursefield" title="Course" placeholder="Course">
-        <input id='crn' type="number" class="coursefield" title="Course Registeration Number" placeholder="CRN">
-        <input id='credits' type="number" class="coursefield" title="Credits" placeholder="Credits">
-      </div>
-      <div>
-        <input id= 'time'  type="time" class="coursefield" title="Time" placeholder="Time">
-      </div>
-      <div>
-        <input id='instructor' type="text" class="coursefield" title="Instructors" placeholder="Instructors">
-      </div>
-      <button class="coursebutton" id="coursebutton" onclick="newCourse(event)" >Submit</button>
-    </form>
-    <div>
-      <input class="field" id="stringnumbers" placeholder="Your Text">
-    </div>
-    <div>
-      <button id ='stringnumbers_button' onclick="stringNumbers()">Switch Numbers</button>
-    </div>
-    <h2 id="finalstring">
-    </h2>
   </div>
 </body>
 </html>

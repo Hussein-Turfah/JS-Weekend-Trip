@@ -43,11 +43,21 @@
   align-items: center;
   justify-content: center;
 }
-
-#hidden{
+.hidden{
   width: 100%;
+  display: none;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
   color: rgb(0, 0, 0);
-  /*display: none;*/
+}
+.hidden2{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
 }
 .coursebutton{
   margin: 20px;
@@ -58,12 +68,11 @@
   font-size: 1.5rem;
 }
 .parallax{
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   background-image: url(image.jpg);
   background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
 }

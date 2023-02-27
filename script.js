@@ -83,8 +83,9 @@ const l_name = document.getElementById('lname').value;
 const email = document.getElementById('email').value;
 const password = document.getElementById('password').value;
 const confirm_password = document.getElementById('confirmpassword').value;
-const register = document.getElementById('register');
-const password_value= /^(?=.*[A-Z])(?=.*[-+_!@#$% ^&*,.?])/;
+const register = document.getElementById('register')
+const email_value = /^[^\s@]+@[^-\s@]+\.[^\s@]+$/
+const password_value= /^(?=.*[A-Z])(?=.*[-+_!@#$% ^&*,.?])/
   /*method for password verification, it means their should be one or more upper 
   ase characters and one or more special characters*/
 
@@ -92,8 +93,10 @@ if (f_name == ''|| l_name == ''||email==''||password==''||confirm_password==''){
   alert('Please fill the remaining fields.');
   return false;
 }
-//DO NOT FORGET EMAIL VERIFICATION!!
-
+else if(!email_value.test(email)){
+  alert('Invalid Email!')
+  return false
+}
 else if(password !== confirm_password){
   alert('Your passwords should be the same.')
   return false
