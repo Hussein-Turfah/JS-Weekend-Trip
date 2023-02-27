@@ -61,16 +61,16 @@ function checkPrime(){
     console.log(age,year,this_year)
     //document.getElementById('birth').replaceWith()
     if(age == 2){
-      console.log('WOWW, Your Age is Prime!')
+      document.getElementById('prime_title').innerHTML = 'WOWW, Your Age is Prime!'
       return;
     }
     for(let i = 2; i < age; i++){
       if (age % i == 0) {
-        console.log('Your Age is not prime.')
+        document.getElementById('prime_title').innerHTML = 'Your Age is not Prime!'
         return;
     }
       else{
-        console.log('WOWW, Your Age is Prime!')
+        document.getElementById('prime_title').innerHTML = 'WOWW, Your Age is Prime!'        
         return;
       }
   }}
@@ -135,9 +135,8 @@ let string_number = string_charactes.split(',');
 for (let i = 0; i < string_number.length; i++){
   if(!isNaN(string_number[i])){
     string_number[i] = string_number[i].toString().split('').reverse('').join('')
-    console.log(string_number)
   }
   let final_string = string_number.join('')
-  console.log(final_string)
+  document.getElementById('finalstring').innerHTML = final_string
 }
 }
