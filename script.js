@@ -1,3 +1,14 @@
+function newCourse(event){
+  event.preventDefault()
+  const name = document.getElementById('name').value
+  const crn = document.getElementById('crn').value
+  const credits = document.getElementById('credits').value
+  const time = document.getElementById('time').value  
+  const instructor = document.getElementById('instructor').value
+
+  const newCourse = new course(name, crn, credits, time, instructor)
+  console.log(newCourse)
+}
 function merge(left, right){
   const merged_array = []
 
@@ -111,20 +122,10 @@ else{
 }
 
 class course{
-  constructor(name,crn,credit,time,instructors)
+  constructor(name,crn,credit,time,instructors){
   name = this.name
   crn = this.crn
-  credits = this.credits
+  credit = this.credits
   time = this.time
   instructors = this.instructors
-}
-document.getElementById('coursebutton')
-
-function newCourse(event){
-  event.preventDefault()
-  const name = document.getElementById('name').value
-  const crn = document.getElementById('crn').value
-  const credits = document.getElementById('credits').value
-  const time = document.getElementById('time').value  
-  const instructor = document.getElementById('instructor').value
-}
+}}

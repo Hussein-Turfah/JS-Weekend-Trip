@@ -41,12 +41,12 @@
       </h2>
     </div>
     <form id="course" name="courseform" class="courseform" >
-      <input type="text" class="coursefield" title="Course" placeholder="Course">
-      <input type="number" class="coursefield" title="Course Registeration Number" placeholder="Course Registeration Number">
-      <input type="number" class="coursefield" title="Credits" placeholder="Credits">
-      <input type="time" class="coursefield" title="Time" placeholder="Time">
-      <input type="text" class="coursefield" title="Instructors" placeholder="Instructors">
-      <button class="coursebutton" id="coursebutton" onclick="newCourse()" >Submit</button>
+      <input id='name'  type="text" class="coursefield" title="Course" placeholder="Course">
+      <input id='crn' type="number" class="coursefield" title="Course Registeration Number" placeholder="Course Registeration Number">
+      <input id='credits' type="number" class="coursefield" title="Credits" placeholder="Credits">
+      <input id= 'time'  type="time" class="coursefield" title="Time" placeholder="Time">
+      <input id='instructor' type="text" class="coursefield" title="Instructors" placeholder="Instructors">
+      <button class="coursebutton" id="coursebutton" onclick="newCourse(event)" >Submit</button>
     </form>
   </div>
 </body>
