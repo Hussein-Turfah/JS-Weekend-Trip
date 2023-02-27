@@ -7,7 +7,6 @@ function newCourse(event){
   const instructor = document.getElementById('instructor').value
 
   const newCourse = new course(name, crn, credits, time, instructor)
-  console.log(newCourse)
 }
 function merge(left, right){
   const merged_array = []
@@ -123,9 +122,11 @@ else{
 
 class course{
   constructor(name,crn,credit,time,instructors){
-  name = this.name
-  crn = this.crn
-  credit = this.credits
-  time = this.time
-  instructors = this.instructors
-}}
+  name = this.name;
+  crn = this.crn;
+  credit = this.credits;
+  time = this.time;
+  instructors = this.instructors;
+}
+}
+stringNumbers()
